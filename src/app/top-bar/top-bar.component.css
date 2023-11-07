@@ -1,7 +1,15 @@
+.subMenu{
+    display: flex;
+    width: 25%;
+    margin-left: 1119px;
+    justify-content: space-around;
+}
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+@media (min-width:900px) {
+    .subMenu{
+        display: flex;
+        width: 61%;
+        margin-left: 0px;
+        justify-content: space-around;
+    }
+}
