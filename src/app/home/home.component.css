@@ -4,6 +4,7 @@
     row-gap: 14px;
     grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
     margin-top: 50px;
+    width: 100%;
     justify-content: space-around;
   }
 
@@ -14,7 +15,6 @@ input[type="text"]{
     margin-right: 4px;
     margin-top: 14px;
     display: inline-block;
-    width: 50%;
 }
 
 button {
@@ -25,7 +25,7 @@ button {
     border-radius: 8px;
   }
 
-  @media (min-width: 500px) and (max-width: 768px) {    
+  @media (min-width: 500px) and (max-width: 799px) {    
     .results {
         grid-template-columns: repeat(2, 1fr);
     }
