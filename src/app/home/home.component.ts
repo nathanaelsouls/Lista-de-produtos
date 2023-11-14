@@ -9,7 +9,8 @@ import { HousingService } from '../housing.service';
   standalone: true,
   imports:[ 
     CommonModule, 
-    HousingLocationComponent],
+    HousingLocationComponent
+  ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })

@@ -1,7 +1,8 @@
 .listing {
     background: rgba(78, 78, 231, 0.932);
     border-radius: 30px;
-    padding-bottom: 30px;    
+    padding-bottom: 30px;  
+    color: white;  
   }
   .listing-heading {
     color: white;
