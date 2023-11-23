@@ -20,12 +20,13 @@ export class HomeComponent {
   filteredLocationList: Housinglocation[] = [];
 
   constructor() {
-    this.housingLocationList = this.housingService.getAllHousingLocations();
-    this.filteredLocationList = this.housingLocationList;
+    this.housingService.getAllHousingLocations().then((housingLocations: Housinglocation[]) => {
+      this.housingLocationList = housingLocations;
+      this.filteredLocationList = housingLocations;  
+    })
   }
 
   filterResults(text: string){
-    console.log('lista reserva: ', this.filteredLocationList);
     if(!text){
       this.filteredLocationList = this.housingLocationList;
     }
@@ -33,8 +34,6 @@ export class HomeComponent {
     this.filteredLocationList = this.housingLocationList.filter((housingLocation) => 
       housingLocation?.city.toLowerCase().includes(text.toLowerCase()),
     );
-
-    console.log('lista reserva preenchida: ', this.filteredLocationList);
   }
 
 }
